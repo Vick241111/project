@@ -43,3 +43,4 @@ function viewBasket () {
     console.log(`TOTAL: $${total}`);
 
 }
+viewProducts();
