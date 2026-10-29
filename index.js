@@ -31,7 +31,7 @@ function addToBasket (productId) {
         console.log(`Sorry, ${foundProduct.name} is out of stock!.`);
     } else {
         basket.push(foundProduct);
-        foundProduct.stock
+        foundProduct.stock--;
         console.log(`${foundProduct.name} added to basket.`);
     }
 }
@@ -51,4 +51,10 @@ function viewBasket () {
     console.log(`TOTAL: $${total}`);
 
 }
+
+addToBasket(1);
+addToBasket(2);
+addToBasket(3);
+addToBasket(4);
+viewBasket();
 viewProducts();
